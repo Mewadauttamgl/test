@@ -30,7 +30,7 @@ public class StudentDao {
 
  try {
 
-  PreparedStatement pstmt=getConnection().prepareStatement("insert into employ values(?,?,?,?,?)");
+  PreparedStatement pstmt=getConnection().prepareStatement("insert into student values(?,?,?,?,?)");
  
 	pstmt.setInt(1, s.getRollno());
 	pstmt.setString(2,s.getStudentName());
